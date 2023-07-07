@@ -1,4 +1,6 @@
-Post.create({
-  name: 'Nombre 2',
-  description: 'Descripción 2'
-})
+Post.create(
+  {
+    name: 'Nombre 1',
+    description: 'Descripción 1'
+  }
+)
