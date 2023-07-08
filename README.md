@@ -1,26 +1,28 @@
 # README
 
+## Instalación
 
-Esto hay que modificarlo
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Instalar dependencias
+```
+bundle install
+```
+### Inicializar la base de datos
+```
+rails db:create db:migrate db:seed
+```
 
-Things you may want to cover:
+### Crear archivo .env en la raíz del proyecto
+Para definir las variables de conexión a la base de datos
 
-* Ruby version
+```
+DATABASE_USERNAME=name
+DATABASE_PASSWORD=password
+DATABASE_HOST=localhost
+DATABASE_PORT=port
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Levantar el servidor
+```
+rails server
+```
+Esto levantará la API en localhost:8080
